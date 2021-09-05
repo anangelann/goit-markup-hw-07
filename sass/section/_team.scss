@@ -1,0 +1,8 @@
+.team {
+	background-color: $color-bg-advantges;
+	&__members {
+		flex-wrap: wrap;
+		margin-top: 50px;
+	}
+}
+

@@ -1,0 +1,98 @@
+body {
+	background-color: $white;
+	color: $color-main-text;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	margin-right: auto;
+	margin-left: auto;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.main--border {
+	border-top: 1px solid #ececec;
+}
+
+.link {
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
+	&--policy {
+		text-decoration: underline;
+		color: $accent;
+	}
+}
+
+.container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.no-padding {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.flexbox {
+	display: flex;
+	align-items: center;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+// общие стили текста
+.section {
+	font-style: normal;
+	&__title {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.17;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: $color-main-text;
+	}
+
+	&__text {
+		color: $color-secondary-text;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.71;
+	}
+	&__text--position {
+		text-align: center;
+	}
+}
