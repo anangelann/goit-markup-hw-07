@@ -1,0 +1,29 @@
+/*-----block Advantages*/
+.advantages-list {
+  @include flex-container();
+ }
+.advantages-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages-list__icons-block {
+  @include flex-container(center, center);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $button-bg-color;
+  border-radius: 4px;
+}
+.advantages-element__title {
+  margin-bottom: 10px;
+
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+.advantages-element__text {
+  line-height: 1.71;
+  color: $secondary-text-color;
+}

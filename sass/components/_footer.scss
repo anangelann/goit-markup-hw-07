@@ -1,0 +1,135 @@
+/*------------FOOTER----------------------*/
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  
+  background: $dark-bg-color;
+}
+
+/*contacts-block-in-footer*/
+.contacts-block-in-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 70px;
+}
+
+/*-------------------*/
+.logo__footer {
+  margin-bottom: 20px;
+}
+.logo--part-in-footer {
+  color: $white-text-color;
+}
+
+/*-------------------*/
+.address-in-footer{
+  display: block;
+  width: 231px;
+}
+.address-in-footer__list{
+  font-style: normal;
+
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+ %footer-link-font {
+  line-height: 1.71;
+  text-decoration: none;
+}
+.address-in-footer__text {
+  .address-in-footer__link {
+    @extend %footer-link-font;
+    color: $white-text-color;
+  };
+
+} 
+.address-in-footer__element {
+  .address-in-footer__link {
+    @extend %footer-link-font;
+    color: $third-text-color;
+ 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  };
+
+  &:hover, 
+  &:focus{
+    .address-in-footer__link {
+      color: $active-color;
+    };
+  };
+
+} 
+
+
+/*join-block-in-footer*/
+.join-block-in-footer {
+  padding-top: 72px;
+  padding-bottom: 100px;
+  margin-right: 93px;
+}
+
+.join-block-in-footer__title,
+.newsletter-block-in-footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white-text-color;
+}
+.join-block-in-footer .block-social-links {
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.join-block-in-footer .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $white-text-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus{
+    background-color: $active-color;
+  }
+}
+
+
+/*newsletter-block-in-footer*/
+.newsletter-block-in-footer {
+  padding-top: 72px;
+  padding-bottom: 94px;
+}
+.form-newsletter {
+ @include flex-container();
+  margin-top: 20px;
+}
+.form-newsletter__input {
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  height: 50px;
+  width: 358px;
+  background-color: $dark-bg-color;
+ 
+  font-size: 16px;
+  line-height: 1.2;
+  align-items: center;
+  color: $white-text-color;
+}
+.form-newsletter__input::placeholder {
+  color: $third-text-color;
+}
+.form-newsletter__button {
+  @extend %button;
+  @include flex-container($align: center);
+  position: relative;
+  padding: 10px 62px 10px 29px;
+}
+
+.form-newsletter__icon {
+  @include position-container_top_right(absolute, 13px, 28px, 24px, 24px);
+}
